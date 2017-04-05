@@ -7,19 +7,18 @@
 from random import randint
 import os
 os.system ('clear')
-#Jugador humà
-#jugador1=raw_input("Possi la jugada (PE/PA/TI/LA/SP):")
+#Jugador 2 màquina
 
 #Jugador machine Tipo Carta
 aleatori2=randint(1,4)
 if (aleatori2==1):
-	jugador2="de Picas"
+	maquina2="de Picas"
 if (aleatori2==2):
-	jugador2="de Diamantes"
+	maquina2="de Diamantes"
 if (aleatori2==3):
-	jugador2="de Tréboles"
+	maquina2="de Tréboles"
 if (aleatori2==4):
-	jugador2="de Corazones"
+	maquina2="de Corazones"
 
 #Jugador machine num carta
 aleatori=randint(1,13)
@@ -49,17 +48,17 @@ if (aleatori==12):
 	jugador2="Q"
 if (aleatori==13):
 	jugador2="K"
-
+#JUgador1 màquina
 #Jugador machine 1 Tipo Carta
 aleatorio2=randint(1,4)
 if (aleatorio2==1):
-	jugador1="de Picas"
+	maquina1="de Picas"
 if (aleatorio2==2):
-	jugador1="de Diamantes"
+	maquina1="de Diamantes"
 if (aleatorio2==3):
-	jugador1="de Tréboles"
+	maquina1="de Tréboles"
 if (aleatorio2==4):
-	jugador1="de Corazones"
+	maquina1="de Corazones"
 
 #Jugador machine 1 num carta
 aleatorio=randint(1,13)
@@ -100,10 +99,10 @@ else: # 6 combinacions
     # Guanya jugador1 (3 combinacions)
     if (aleatorio>aleatori):
 		print "Jugador 1 guanya!!"
-		print "La jugada J1 ha estat: " , jugador1
-		print "La jugada J2 ha estat: " , jugador2
+		print "La jugada J1 ha estat: " , jugador1 , maquina1
+		print "La jugada J2 ha estat: " , jugador2 , maquina2
     else: # Guanya jugador2 (3 combinacions)
         print "Jugador 2 guanya!!"
-        print "La jugada J1 ha estat: " , jugador1 
-        print "La jugada J2 ha estat: " , jugador2
+        print "La jugada J1 ha estat: " , jugador1 , maquina1
+        print "La jugada J2 ha estat: " , jugador2 , maquina2
 
