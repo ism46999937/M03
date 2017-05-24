@@ -3,7 +3,7 @@ import os
  
 path_to_explore="./prueba/"
 
-# Mostrem ruta tot    
+# Mostramos ruta de todo lo que contiene prueba    
 for root, dirs, files in os.walk(path_to_explore):
     for name in files:
             
